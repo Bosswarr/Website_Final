@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuiceKopo Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="Asset/logo.png" alt="JuiceKopo">
+                    <span>JuiceKopo</span>
+                </div>
+                <h1><a href="Home.html" class="dashboard-link">DASHBOARD</a></h1>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <span class="user-name">Juan</span>
+                <span class="user-role">Restaurant Owner</span>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <div class="nav-section">
+                        <a href="Home.html" class="nav-item active">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Profile</h3>
+                        <a href="Avatar.html" class="nav-item">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Avatar</span>
+                        </a>
+                        <a href="Contact.html" class="nav-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Details</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Sale</h3>
+                        <a href="Booking.html" class="nav-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Booking</span>
+                        </a>
+                        <a href="Orders.html" class="nav-item">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Message</h3>
+                        <a href="Inbox.html" class="nav-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Inbox</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Page</h3>
+                        <a href="Edit.html" class="nav-item">
+                            <i class="fas fa-edit"></i>
+                            <span>Edit</span>
+                        </a>
+                        <a href="food_menu.html" class="nav-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Food Menu</span>
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Welcome Section -->
+                <section class="welcome-section">
+                    <h2>Welcome Juan!</h2>
+                    <p>Here is your activity summary</p>
+                </section>
+
+                <!-- Statistics Cards -->
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📅</div>
+                        <div class="stat-content">
+                            <h3>45</h3>
+                            <p>New Bookings</p>
+                            <span class="stat-increase"><i class="fas fa-arrow-up"></i> 8.9%</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">👁️</div>
+                        <div class="stat-content">
+                            <h3>158</h3>
+                            <p>Total Views</p>
+                            <span class="stat-increase"><i class="fas fa-arrow-up"></i> 3.1%</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">✉️</div>
+                        <div class="stat-content">
+                            <h3>14</h3>
+                            <p>Unread Message</p>
+                            <span class="stat-increase"><i class="fas fa-arrow-up"></i> 4.2%</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-content">
+                            <p>Total Sale</p>
+                            <h3>Php130,456.22</h3>
+                            <span class="stat-increase"><i class="fas fa-arrow-up"></i> 24.6%</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Content Grid -->
+                <section class="content-grid">
+                    <!-- Recent Bookings -->
+                    <div class="content-card booking-card">
+                        <h3>Recent booking</h3>
+                        <table class="booking-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="customer-name">Don Torrea</div>
+                                        <small>Customer</small>
+                                    </td>
+                                    <td>04/14/26</td>
+                                    <td><span class="status confirm">Confirm</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="customer-name">Jemir Ambojia</div>
+                                        <small>Customer</small>
+                                    </td>
+                                    <td>04/26/26</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="customer-name">Ashley Reyes</div>
+                                        <small>Customer</small>
+                                    </td>
+                                    <td>04/16/26</td>
+                                    <td><span class="status confirm">Confirm</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="view-all-btn">View all</button>
+                    </div>
+
+                    <!-- Recent Messages -->
+                    <div class="content-card messages-card">
+                        <h3>Recent Messages</h3>
+                        <div class="messages-list">
+                            <div class="message-item">
+                                <div class="sender-info">
+                                    <div class="sender-name">Don Torrea</div>
+                                    <small>Customer</small>
+                                </div>
+                                <div class="message-content">
+                                    <p>Hi, I like to add 1 more table to our appointment tommor.</p>
+                                    <small class="time">10 Mins ago</small>
+                                </div>
+                            </div>
+
+                            <div class="message-item">
+                                <div class="sender-info">
+                                    <div class="sender-name">Rinoa De Leon</div>
+                                    <small>Customer</small>
+                                </div>
+                                <div class="message-content">
+                                    <p>Hi, I like to book on 04/30/26.</p>
+                                    <small class="time">40 Mins ago</small>
+                                </div>
+                            </div>
+
+                            <div class="message-item">
+                                <div class="sender-info">
+                                    <div class="sender-name">Irving Bawag</div>
+                                    <small>Customer</small>
+                                </div>
+                                <div class="message-content">
+                                    <p>Can I Cancel my book and move on May 1?</p>
+                                    <small class="time">1 hour ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="view-all-btn">View all</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JuiceKopo</h4>
+                    <p>Your premium restaurant management dashboard</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Home.html">Dashboard</a></li>
+                        <li><a href="Avatar.html">Avatar</a></li>
+                        <li><a href="Booking.html">Bookings</a></li>
+                        <li><a href="Orders.html">Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JuiceKopo. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

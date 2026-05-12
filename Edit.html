@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit - JuiceKopo Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="Asset/logo.png" alt="JuiceKopo">
+                    <span>JuiceKopo</span>
+                </div>
+                <h1><a href="Home.html" class="dashboard-link">DASHBOARD</a></h1>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <span class="user-name">Juan</span>
+                <span class="user-role">Restaurant Owner</span>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <div class="nav-section">
+                        <a href="Home.html" class="nav-item">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Profile</h3>
+                        <a href="Avatar.html" class="nav-item">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Avatar</span>
+                        </a>
+                        <a href="Contact.html" class="nav-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Details</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Sale</h3>
+                        <a href="Booking.html" class="nav-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Booking</span>
+                        </a>
+                        <a href="Orders.html" class="nav-item">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Message</h3>
+                        <a href="Inbox.html" class="nav-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Inbox</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Page</h3>
+                        <a href="Edit.html" class="nav-item active">
+                            <i class="fas fa-edit"></i>
+                            <span>Edit</span>
+                        </a>
+                        <a href="food_menu.html" class="nav-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Food Menu</span>
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content edit-page">
+                <div class="edit-container">
+                    <!-- Left Section - Food Menu -->
+                    <div class="edit-left">
+                        <div class="food-menu">
+                            <div class="food-item">
+                                <h3 class="food-name">Tinolang Manok</h3>
+                                <p class="food-price">315</p>
+                                <p class="food-description">A must try chicken soup, cooked with ginger, fish sauce and vegetables</p>
+                            </div>
+
+                            <div class="food-item">
+                                <h3 class="food-name">Bulalo Soup</h3>
+                                <p class="food-price">395</p>
+                                <p class="food-description">another Filipino classic dish, tender leg of beef in a vegetable broth, good for people</p>
+                            </div>
+
+                            <div class="food-item">
+                                <h3 class="food-name">Crispy Pata</h3>
+                                <p class="food-price">595</p>
+                                <p class="food-description">crispy, juicy and tender fried pork legs, with native dip. good for two people</p>
+                            </div>
+
+                            <div class="food-item">
+                                <h3 class="food-name">Pancit Canton/Bihon</h3>
+                                <p class="food-price">195</p>
+                                <p class="food-description">egg noodles or glass noodles fried with mixed vegetables and meats</p>
+                            </div>
+
+                            <div class="food-item">
+                                <h3 class="food-name">Bicol Express</h3>
+                                <p class="food-price">315</p>
+                                <p class="food-description">pork cooked in spicy coconut milk, the specialty of the Bicol region in Luzon</p>
+                            </div>
+
+                            <div class="food-item">
+                                <h3 class="food-name">Bistik Tagalog</h3>
+                                <p class="food-price">315</p>
+                                <p class="food-description">thin soy sauce and lemon, they say you've never been to the Philippines if you have never tried this dish! available in pork or chicken</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Middle Section - Images and About -->
+                    <div class="edit-middle">
+                        <!-- Images Grid -->
+                        <div class="images-grid">
+                            <img src="Asset/pic1.png" alt="Restaurant Image 1" class="grid-image">
+                            <img src="Asset/pic2.png" alt="Restaurant Image 2" class="grid-image">
+                            <img src="Asset/pic3.png" alt="Restaurant Image 3" class="grid-image">
+                            <img src="Asset/pic4.png" alt="Restaurant Image 4" class="grid-image">
+                        </div>
+
+                        <!-- About Us Section -->
+                        <div class="about-section">
+                            <h2 class="about-title">About us</h2>
+                            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae erat elementum augue sollicitudin pulvinar non sit amet tellus. Nam a liguam ligula nunc, quis ma lesuada urna dapibus quis. Aliquam tellus arcu, posuere vitae sagittis sed, condimentum eu dolor. Maecenas vulputate pellentesque metus, sed aliquam dolor mollis quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla arcu magna, finibus nec dui placerat, efficitur molestie ex. Aliquam mollis vitae odio nec fa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="edit-actions">
+                    <button class="btn-edit-action">Edit</button>
+                    <button class="btn-save-action">Save</button>
+                    <button class="btn-view-all-action">View all</button>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JuiceKopo</h4>
+                    <p>Your premium restaurant management dashboard</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Home.html">Dashboard</a></li>
+                        <li><a href="Avatar.html">Avatar</a></li>
+                        <li><a href="Booking.html">Bookings</a></li>
+                        <li><a href="Orders.html">Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JuiceKopo. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

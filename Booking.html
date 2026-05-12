@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details - JuiceKopo Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="Asset/logo.png" alt="JuiceKopo">
+                    <span>JuiceKopo</span>
+                </div>
+                <h1><a href="Home.html" class="dashboard-link">DASHBOARD</a></h1>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <span class="user-name">Juan</span>
+                <span class="user-role">Restaurant Owner</span>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <div class="nav-section">
+                        <a href="Home.html" class="nav-item">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Profile</h3>
+                        <a href="Avatar.html" class="nav-item">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Avatar</span>
+                        </a>
+                        <a href="Contact.html" class="nav-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Details</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Sale</h3>
+                        <a href="Booking.html" class="nav-item active">
+                            <i class="fas fa-calendar"></i>
+                            <span>Booking</span>
+                        </a>
+                        <a href="Orders.html" class="nav-item">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Message</h3>
+                        <a href="Inbox.html" class="nav-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Inbox</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Page</h3>
+                        <a href="Edit.html" class="nav-item">
+                            <i class="fas fa-edit"></i>
+                            <span>Edit</span>
+                        </a>
+                        <a href="food_menu.html" class="nav-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Food Menu</span>
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content booking-page">
+                <h2 class="booking-title">Booking Details</h2>
+
+                <div class="booking-container">
+                    <!-- Left Section - Table Layout -->
+                    <div class="booking-left">
+                        <div class="table-layout">
+                            <div class="table-seat">1</div>
+                            <div class="table-seat">2</div>
+                            <div class="table-seat">3</div>
+                            <div class="table-seat">4</div>
+                            <div class="table-seat">5</div>
+                            <div class="table-seat">6</div>
+                            <div class="table-seat">7</div>
+                            <div class="table-seat">8</div>
+                            <div class="table-seat">9</div>
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="booking-right">
+                        <!-- Status Cards -->
+                        <div class="status-card">
+                            <h3 class="status-date">April 16 2026</h3>
+                            <div class="status-grid">
+                                <div class="status-item">
+                                    <span class="status-label">Confirm</span>
+                                    <span class="status-number">5</span>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-label">Pending</span>
+                                    <span class="status-number">5</span>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-label">Walk in</span>
+                                    <span class="status-number">3</span>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-label">Cancel</span>
+                                    <span class="status-number">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Table Reservations -->
+                        <div class="reservations-card">
+                            <h3 class="table-title">Table</h3>
+                            <table class="reservation-table">
+                                <thead>
+                                    <tr>
+                                        <th>Table No.</th>
+                                        <th>Name</th>
+                                        <th>No.Pax</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Rinoa</td>
+                                        <td>5</td>
+                                        <td>10:00am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Jemir</td>
+                                        <td>3</td>
+                                        <td>11:00am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Franco</td>
+                                        <td>2</td>
+                                        <td>3:00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Irvin</td>
+                                        <td>6</td>
+                                        <td>6:00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Don</td>
+                                        <td>3</td>
+                                        <td>5:00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JuiceKopo</h4>
+                    <p>Your premium restaurant management dashboard</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Home.html">Dashboard</a></li>
+                        <li><a href="Avatar.html">Avatar</a></li>
+                        <li><a href="Booking.html">Bookings</a></li>
+                        <li><a href="#">Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JuiceKopo. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

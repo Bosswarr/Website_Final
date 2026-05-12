@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox - JuiceKopo Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="Asset/logo.png" alt="JuiceKopo">
+                    <span>JuiceKopo</span>
+                </div>
+                <h1><a href="Home.html" class="dashboard-link">DASHBOARD</a></h1>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <span class="user-name">Juan</span>
+                <span class="user-role">Restaurant Owner</span>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <div class="nav-section">
+                        <a href="Home.html" class="nav-item">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Profile</h3>
+                        <a href="Avatar.html" class="nav-item">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Avatar</span>
+                        </a>
+                        <a href="Contact.html" class="nav-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Details</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Sale</h3>
+                        <a href="Booking.html" class="nav-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Booking</span>
+                        </a>
+                        <a href="Orders.html" class="nav-item">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Message</h3>
+                        <a href="Inbox.html" class="nav-item active">
+                            <i class="fas fa-envelope"></i>
+                            <span>Inbox</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Page</h3>
+                        <a href="Edit.html" class="nav-item">
+                            <i class="fas fa-edit"></i>
+                            <span>Edit</span>
+                        </a>
+                        <a href="food_menu.html" class="nav-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Food Menu</span>
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content inbox-page">
+                <h2 class="inbox-title">Inbox</h2>
+
+                <div class="inbox-container">
+                    <!-- Left Section - Messages List -->
+                    <div class="inbox-left">
+                        <div class="messages-section">
+                            <h3 class="messages-header">Messages</h3>
+                            <div class="message-threads">
+                                <div class="message-thread" onclick="selectThread('Rinoa De Leon', 'I would like to add table for 2')">
+                                    <div class="thread-sender">Rinoa:</div>
+                                    <div class="thread-preview">I would like ....</div>
+                                    <div class="thread-time">Now</div>
+                                </div>
+
+                                <div class="message-thread" onclick="selectThread('Don', 'New Messages')">
+                                    <div class="thread-sender">Don:</div>
+                                    <div class="thread-preview"><strong>New Messages</strong></div>
+                                </div>
+
+                                <div class="message-thread" onclick="selectThread('Irvin', 'New Messages')">
+                                    <div class="thread-sender">Irvin:</div>
+                                    <div class="thread-preview"><strong>New Messages</strong></div>
+                                </div>
+
+                                <div class="message-thread" onclick="selectThread('Franco', 'Can I move ...')">
+                                    <div class="thread-sender">Franco:</div>
+                                    <div class="thread-preview">Can I move ...</div>
+                                </div>
+
+                                <div class="message-thread" onclick="selectThread('Jemir', 'Your food is ...')">
+                                    <div class="thread-sender">Jemir:</div>
+                                    <div class="thread-preview">Your food is ...</div>
+                                </div>
+
+                                <div class="message-thread" onclick="selectThread('Keith', 'New Messages')">
+                                    <div class="thread-sender">Keith:</div>
+                                    <div class="thread-preview"><strong>New Messages</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Section - Chat View -->
+                    <div class="inbox-right">
+                        <div class="chat-container">
+                            <div class="chat-header">
+                                <div class="chat-user-info">
+                                    <h3 class="chat-user-name" id="chatUserName">Rinoa De Leon</h3>
+                                    <span class="chat-time" id="chatTime">8:46am</span>
+                                </div>
+                            </div>
+
+                            <div class="chat-messages" id="chatMessages">
+                                <div class="message-bubble customer">
+                                    <p>I would like to add table for 2</p>
+                                </div>
+
+                                <div class="message-bubble owner">
+                                    <p>Ok Ma'am Noted.</p>
+                                </div>
+
+                                <div class="message-input-area">
+                                    <p class="placeholder-text">Would you like add an orders?</p>
+                                </div>
+                            </div>
+
+                            <div class="chat-input-section">
+                                <textarea id="messageInput" class="message-input" placeholder="Type your message..."></textarea>
+                                <button class="send-button" onclick="sendMessage()">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JuiceKopo</h4>
+                    <p>Your premium restaurant management dashboard</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Home.html">Dashboard</a></li>
+                        <li><a href="Avatar.html">Avatar</a></li>
+                        <li><a href="Booking.html">Bookings</a></li>
+                        <li><a href="Orders.html">Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JuiceKopo. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function selectThread(name, preview) {
+            document.getElementById('chatUserName').textContent = name;
+            document.getElementById('chatTime').textContent = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            if (input.value.trim() === '') return;
+            
+            const chatMessages = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message-bubble owner';
+            messageDiv.innerHTML = '<p>' + input.value + '</p>';
+            chatMessages.appendChild(messageDiv);
+            input.value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    </script>
+</body>
+</html>

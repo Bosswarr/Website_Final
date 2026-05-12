@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu - JuiceKopo Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="Asset/logo.png" alt="JuiceKopo">
+                    <span>JuiceKopo</span>
+                </div>
+                <h1><a href="Home.html" class="dashboard-link">DASHBOARD</a></h1>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <span class="user-name">Juan</span>
+                <span class="user-role">Restaurant Owner</span>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <div class="nav-section">
+                        <a href="Home.html" class="nav-item">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Profile</h3>
+                        <a href="Avatar.html" class="nav-item">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Avatar</span>
+                        </a>
+                        <a href="Contact.html" class="nav-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Details</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Sale</h3>
+                        <a href="Booking.html" class="nav-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Booking</span>
+                        </a>
+                        <a href="Orders.html" class="nav-item">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Message</h3>
+                        <a href="Inbox.html" class="nav-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Inbox</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Page</h3>
+                        <a href="Edit.html" class="nav-item">
+                            <i class="fas fa-edit"></i>
+                            <span>Edit</span>
+                        </a>
+                        <a href="food_menu.html" class="nav-item active">
+                            <i class="fas fa-utensils"></i>
+                            <span>Food Menu</span>
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content food-menu-page">
+                <div class="food-menu-container">
+                    <!-- Page Title -->
+                    <h1 class="food-menu-title">Food Menu</h1>
+
+                    <!-- Food Categories Grid -->
+                    <div class="menu-categories">
+                        <!-- Main Dishes Category -->
+                        <div class="menu-category">
+                            <h2 class="category-title">Main Dishes</h2>
+                            <div class="category-items">
+                                <div class="menu-item">
+                                    <h3 class="item-name">Tinolang Manok</h3>
+                                    <p class="item-price">₱250</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Pork Sinigang</h3>
+                                    <p class="item-price">₱225</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Singang na Baboy</h3>
+                                    <p class="item-price">₱250</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Kare Kare</h3>
+                                    <p class="item-price">₱280</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Lechon Kawali</h3>
+                                    <p class="item-price">₱260</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Crispy Pata</h3>
+                                    <p class="item-price">₱350</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Noodles Category -->
+                        <div class="menu-category">
+                            <h2 class="category-title">Noodles</h2>
+                            <div class="category-items">
+                                <div class="menu-item">
+                                    <h3 class="item-name">Pancit Canton</h3>
+                                    <p class="item-price">₱180</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Bilhon Guisado</h3>
+                                    <p class="item-price">₱170</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Palabok</h3>
+                                    <p class="item-price">₱190</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rice Meals Category -->
+                        <div class="menu-category">
+                            <h2 class="category-title">Rice Meals</h2>
+                            <div class="category-items">
+                                <div class="menu-item">
+                                    <h3 class="item-name">Garlic Rice</h3>
+                                    <p class="item-price">₱80</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Plain Rice</h3>
+                                    <p class="item-price">₱25</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Java Rice</h3>
+                                    <p class="item-price">₱95</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Snacks/Sides Category -->
+                        <div class="menu-category">
+                            <h2 class="category-title">Snacks / Sides</h2>
+                            <div class="category-items">
+                                <div class="menu-item">
+                                    <h3 class="item-name">Lumpiyang Shanghai (10)</h3>
+                                    <p class="item-price">₱150</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Tukso Balot</h3>
+                                    <p class="item-price">₱160</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Kwek-Kwek</h3>
+                                    <p class="item-price">₱90</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drinks Category -->
+                        <div class="menu-category">
+                            <h2 class="category-title">Drinks</h2>
+                            <div class="category-items">
+                                <div class="menu-item">
+                                    <h3 class="item-name">Iced Tea</h3>
+                                    <p class="item-price">₱60</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Calamansi Juice</h3>
+                                    <p class="item-price">₱70</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Softdrinks</h3>
+                                    <p class="item-price">₱50</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desserts Category -->
+                        <div class="menu-category">
+                            <h2 class="category-title">Desserts</h2>
+                            <div class="category-items">
+                                <div class="menu-item">
+                                    <h3 class="item-name">Halo-Halo</h3>
+                                    <p class="item-price">₱120</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Leche Flan</h3>
+                                    <p class="item-price">₱90</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h3 class="item-name">Turon with Ice Cream</h3>
+                                    <p class="item-price">₱110</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Button -->
+                    <div class="menu-actions">
+                        <a href="Edit.html" class="btn btn-edit">Edit</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

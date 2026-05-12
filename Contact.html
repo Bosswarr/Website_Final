@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details - JuiceKopo Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="Asset/logo.png" alt="JuiceKopo">
+                    <span>JuiceKopo</span>
+                </div>
+                <h1><a href="Home.html" class="dashboard-link">DASHBOARD</a></h1>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <span class="user-name">Juan</span>
+                <span class="user-role">Restaurant Owner</span>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <div class="nav-section">
+                        <a href="Home.html" class="nav-item">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Profile</h3>
+                        <a href="Avatar.html" class="nav-item">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Avatar</span>
+                        </a>
+                        <a href="Contact.html" class="nav-item active">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Details</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Sale</h3>
+                        <a href="Booking.html" class="nav-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Booking</span>
+                        </a>
+                        <a href="Orders.html" class="nav-item">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Message</h3>
+                        <a href="Inbox.html" class="nav-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Inbox</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Page</h3>
+                        <a href="Edit.html" class="nav-item">
+                            <i class="fas fa-edit"></i>
+                            <span>Edit</span>
+                        </a>
+                        <a href="food_menu.html" class="nav-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Food Menu</span>
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content contact-page">
+                <div class="contact-container">
+                    <h2 class="contact-title">Contact Details</h2>
+
+                    <div class="contact-card">
+                        <form id="contactForm">
+                            <!-- Address Section -->
+                            <div class="form-section">
+                                <h3 class="section-title">Address</h3>
+                                <div class="address-grid">
+                                    <div class="form-group">
+                                        <label>Region</label>
+                                        <input type="text" value="IV-A" placeholder="Enter region">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Province</label>
+                                        <input type="text" value="Cavite" placeholder="Enter province">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input type="text" value="Silang" placeholder="Enter city">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Street</label>
+                                        <input type="text" value="4th Street" placeholder="Enter street">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Barangay</label>
+                                        <input type="text" value="Buho" placeholder="Enter barangay">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contact Numbers Section -->
+                            <div class="form-section">
+                                <h3 class="section-title">Contact Number</h3>
+                                <div class="contact-grid">
+                                    <div class="form-group">
+                                        <label>Tel-No.</label>
+                                        <input type="text" value="048-458-985-78" placeholder="Enter telephone number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Cell-No. Globe</label>
+                                        <input type="text" value="09977845621" placeholder="Enter Globe number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Cell-No. Smart</label>
+                                        <input type="text" value="0930124658" placeholder="Enter Smart number">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email Section -->
+                            <div class="form-section">
+                                <h3 class="section-title">Email Address</h3>
+                                <div class="form-group full-width">
+                                    <label>Email</label>
+                                    <input type="email" value="juicekopo142@gmail.com" placeholder="Enter email address">
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="button-group contact-buttons">
+                                <button type="button" class="btn btn-edit" onclick="editContact()">Edit</button>
+                                <button type="button" class="btn btn-save" onclick="saveContact()">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JuiceKopo</h4>
+                    <p>Your premium restaurant management dashboard</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Home.html">Dashboard</a></li>
+                        <li><a href="Avatar.html">Avatar</a></li>
+                        <li><a href="#">Bookings</a></li>
+                        <li><a href="#">Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JuiceKopo. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function editContact() {
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.disabled = false;
+                input.classList.add('active');
+            });
+            alert('Contact details are now editable. Make your changes and click Save.');
+        }
+
+        function saveContact() {
+            const form = document.getElementById('contactForm');
+            const formData = new FormData(form);
+            alert('Contact details have been saved successfully!');
+            
+            // Disable inputs after saving
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.disabled = true;
+                input.classList.remove('active');
+            });
+        }
+
+        // Disable inputs on page load
+        window.addEventListener('load', function() {
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.disabled = true;
+            });
+        });
+    </script>
+</body>
+</html>

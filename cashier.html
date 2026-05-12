@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuiceKope Cashier</title>
+    <link rel="stylesheet" href="cashier.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-section">
+            <img src="Asset/logo.png" alt="JuiceKope Logo" class="logo">
+            <span class="app-name">JuiceKope</span>
+        </div>
+        <div class="header-center">
+            <button class="nav-btn">DASHBOARD</button>
+        </div>
+        <div class="search-section">
+            <input type="text" placeholder="Search..." class="search-bar">
+        </div>
+        <div class="user-section">
+            <span class="username">Liza</span>
+            <span class="role">Cashier #1</span>
+        </div>
+    </div>
+
+    <div class="sub-header">
+        <span>Cashier</span>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <button class="menu-btn active">Main Dishes</button>
+            <button class="menu-btn">Noodles</button>
+            <button class="menu-btn">Rice Meals</button>
+            <button class="menu-btn">Snack</button>
+            <button class="menu-btn">Drinks</button>
+            <button class="menu-btn">Deserts</button>
+            <button class="menu-btn">Discounts/Void</button>
+        </div>
+
+        <div class="content">
+            <div class="menu-section">
+                <h2>Noodles</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <p>Pancit Canton-180</p>
+                    </div>
+                    <div class="menu-item">
+                        <p>Bihon Guisado-170</p>
+                    </div>
+                    <div class="menu-item">
+                        <p>Palabok-190</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-panel">
+            <h3>Pancit Canton-180</h3>
+            <div class="quantity-control">
+                <button class="qty-btn">-</button>
+                <span class="qty-display">2</span>
+                <button class="qty-btn">+</button>
+                <span class="price-badge">280</span>
+            </div>
+            
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pancit Canton</td>
+                        <td>2</td>
+                        <td>360</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="order-total">
+                <span>Total=</span>
+                <span class="total-amount">260</span>
+            </div>
+
+            <button class="submit-btn">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

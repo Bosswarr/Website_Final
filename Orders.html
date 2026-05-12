@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - JuiceKopo Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="Asset/logo.png" alt="JuiceKopo">
+                    <span>JuiceKopo</span>
+                </div>
+                <h1><a href="Home.html" class="dashboard-link">DASHBOARD</a></h1>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <span class="user-name">Juan</span>
+                <span class="user-role">Restaurant Owner</span>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <div class="nav-section">
+                        <a href="Home.html" class="nav-item">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Profile</h3>
+                        <a href="Avatar.html" class="nav-item">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Avatar</span>
+                        </a>
+                        <a href="Contact.html" class="nav-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact Details</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Sale</h3>
+                        <a href="Booking.html" class="nav-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Booking</span>
+                        </a>
+                        <a href="Orders.html" class="nav-item active">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Message</h3>
+                        <a href="Inbox.html" class="nav-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Inbox</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <h3>Page</h3>
+                        <a href="Edit.html" class="nav-item">
+                            <i class="fas fa-edit"></i>
+                            <span>Edit</span>
+                        </a>
+                        <a href="food_menu.html" class="nav-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Food Menu</span>
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content orders-page">
+                <h2 class="orders-title">Order/Confirmation</h2>
+
+                <div class="orders-container">
+                    <!-- Left Section - Customer List -->
+                    <div class="orders-left">
+                        <div class="customer-list">
+                            <div class="customer-item">
+                                <span class="customer-name">Rinoa</span>
+                                <button class="btn-see-orders" onclick="loadOrders('Rinoa')">See Orders</button>
+                            </div>
+                            <div class="customer-item">
+                                <span class="customer-name">Don</span>
+                                <button class="btn-see-orders" onclick="loadOrders('Don')">See Orders</button>
+                            </div>
+                            <div class="customer-item">
+                                <span class="customer-name">Franco</span>
+                                <button class="btn-see-orders" onclick="loadOrders('Franco')">See Orders</button>
+                            </div>
+                            <div class="customer-item">
+                                <span class="customer-name">Irvin</span>
+                                <button class="btn-see-orders" onclick="loadOrders('Irvin')">See Orders</button>
+                            </div>
+                            <div class="customer-item">
+                                <span class="customer-name">Jemir</span>
+                                <button class="btn-see-orders" onclick="loadOrders('Jemir')">See Orders</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Section - Orders Details -->
+                    <div class="orders-right">
+                        <div class="orders-card">
+                            <h3 class="orders-header">Orders</h3>
+                            <table class="orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Food</th>
+                                        <th>Qty.</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ordersTableBody">
+                                    <tr>
+                                        <td>Rinoa</td>
+                                        <td>Platter Rice</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Sinigang na Salmon</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Pork sisig</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Halo-Halo L</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Pitcher Ice Tea</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="orders-actions">
+                                <button class="btn btn-confirm">Confirm</button>
+                                <button class="btn btn-pending">Pending</button>
+                                <button class="btn btn-cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JuiceKopo</h4>
+                    <p>Your premium restaurant management dashboard</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Home.html">Dashboard</a></li>
+                        <li><a href="Avatar.html">Avatar</a></li>
+                        <li><a href="Booking.html">Bookings</a></li>
+                        <li><a href="Orders.html">Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JuiceKopo. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function loadOrders(customerName) {
+            // Sample order data
+            const orders = {
+                'Rinoa': [
+                    { name: 'Rinoa', food: 'Platter Rice', qty: 1 },
+                    { name: '', food: 'Sinigang na Salmon', qty: 1 },
+                    { name: '', food: 'Pork sisig', qty: 1 },
+                    { name: '', food: 'Halo-Halo L', qty: 2 },
+                    { name: '', food: 'Pitcher Ice Tea', qty: 1 }
+                ],
+                'Don': [
+                    { name: 'Don', food: 'Adobo', qty: 2 },
+                    { name: '', food: 'Fried Rice', qty: 2 },
+                    { name: '', food: 'Spring Rolls', qty: 3 }
+                ],
+                'Franco': [
+                    { name: 'Franco', food: 'Kare-Kare', qty: 1 },
+                    { name: '', food: 'Iced Coffee', qty: 2 }
+                ],
+                'Irvin': [
+                    { name: 'Irvin', food: 'Spaghetti', qty: 3 },
+                    { name: '', food: 'Garlic Bread', qty: 2 },
+                    { name: '', food: 'Soda', qty: 3 }
+                ],
+                'Jemir': [
+                    { name: 'Jemir', food: 'Chicken Fried Rice', qty: 1 },
+                    { name: '', food: 'Lumpia', qty: 4 },
+                    { name: '', food: 'Dessert Combo', qty: 1 }
+                ]
+            };
+
+            const tbody = document.getElementById('ordersTableBody');
+            tbody.innerHTML = '';
+
+            if (orders[customerName]) {
+                orders[customerName].forEach(order => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${order.name}</td>
+                        <td>${order.food}</td>
+                        <td>${order.qty}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            }
+        }
+
+        // Confirm button action
+        document.querySelector('.btn-confirm').addEventListener('click', function() {
+            alert('Order confirmed successfully!');
+        });
+
+        // Pending button action
+        document.querySelector('.btn-pending').addEventListener('click', function() {
+            alert('Order marked as pending!');
+        });
+
+        // Cancel button action
+        document.querySelector('.btn-cancel').addEventListener('click', function() {
+            if (confirm('Are you sure you want to cancel this order?')) {
+                alert('Order cancelled!');
+            }
+        });
+    </script>
+</body>
+</html>
